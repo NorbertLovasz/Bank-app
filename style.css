@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&display=swap');
 
+:root {
+    --dark-primary-color:#00796B;
+    --default-primary-color:#009688;
+    --light-primary-color:#B2DFDB;
+    --text-primary-color:#FFFFFF;
+    --accent-color:#FFC107;
+    --primary-text-color:#212121; 
+    --secondary-text-color:#757575;
+    --divider-color:#BDBDBD;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,7 +31,7 @@ header {
     height: 50px;
     align-items: center;
     font-size: 1.2rem;
-    border-bottom: 2px solid #009688;
+    border-bottom: var(--default-primary-color) 2px solid;
 }
 
 .greeting {
