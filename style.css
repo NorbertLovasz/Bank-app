@@ -8,7 +8,8 @@
     --accent-color:#FFC107;
     --primary-text-color:#212121; 
     --secondary-text-color:#757575;
-    --divider-color:#BDBDBD;
+    --divider-color:#ece3e3;
+    --contrast-color: #963100
 }
 
 * {
@@ -18,7 +19,7 @@
 }
 
 body {
-    background-color: #BDBDBD;
+    background-color: #ece3e3;
     font-family: 'Montserrat', sans-serif;
     font-weight: 450;
     color: #212121;
@@ -122,11 +123,7 @@ main {
     margin: 2rem auto;
 }
 
-.transactions {
-    height: 55vh;
-    border: 2px solid red;
-    width: 60%;
-}
+
 
 .operations {
     height: 55vh;
@@ -134,3 +131,96 @@ main {
     width: 40%;
 }
 
+.info_balance {
+    display: flex;
+    /* border: yellow 2px solid; */
+    margin: 10px 20px 0px 20px;
+    gap: 5vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    align-items: baseline;
+}
+
+/* .info_balance div {
+    border: black 2px solid;
+    
+} */
+
+.timer {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.deposits_total {
+    color: var(--dark-primary-color);
+    font-size: 1.5rem;
+}
+
+.whitdrawls_total {
+    color:var(--contrast-color);
+    font-size: 1.5rem; 
+}
+
+/* .sort {
+    border: blue 2px solid;
+    flex-grow: 2;
+} */
+
+.sort button {
+    padding: 0.8rem;
+    background-color: var(--accent-color);
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 1.1rem;
+}
+
+.sort button:hover {
+    background-color:#e38502;
+    cursor: pointer;
+}
+
+.sort button:active {
+    background-color: aliceblue;
+    margin: 1rem;
+}
+
+.transaction_row {
+    /* border: 2px black solid; */
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--text-primary-color);
+}
+
+.transaction_type {
+    border: pink solid 2px;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+/* .transaction_amount {
+    border: #e38502 2px solid;
+} */
+.transactions {
+    height: 55vh;
+    /* border: 2px solid red; */
+    width: 60%;
+    overflow: auto;
+}
+
+.whithdrawl_style {
+    background-color: var(--contrast-color);
+    background: -webkit-radial-gradient(top, #963100, #FE9562);
+        background: -moz-radial-gradient(top, #963100, #FE9562);
+        background: radial-gradient(to bottom, #963100, #FE9562);
+}
+
+.deposit_style {
+    background: #009689;
+        background: -webkit-radial-gradient(top, #009689, #B2DFDB);
+        background: -moz-radial-gradient(top, #009689, #B2DFDB);
+        background: radial-gradient(to bottom, #009689, #B2DFDB);
+}
