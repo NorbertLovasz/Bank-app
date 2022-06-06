@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&display=swap');
 
 :root {
-    --dark-primary-color:#00796B;
-    --default-primary-color:#009688;
-    --light-primary-color:#B2DFDB;
-    --text-primary-color:#FFFFFF;
-    --accent-color:#FFC107;
-    --primary-text-color:#212121; 
-    --secondary-text-color:#757575;
-    --divider-color:#ece3e3;
+    --dark-primary-color: #00796B;
+    --default-primary-color: #009688;
+    --light-primary-color: #B2DFDB;
+    --text-primary-color: #FFFFFF;
+    --accent-color: #FFC107;
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --divider-color: #ece3e3;
     --contrast-color: #963100
 }
+
+/* Resetari stiluri browser */
 
 * {
     padding: 0;
@@ -51,14 +53,14 @@ header {
 
 .login {
     display: flex;
-        /* border: 2px solid green; */
-        flex-basis: calc(100% / 3);
-        padding-right: 2rem;
-        align-items: center;
-        gap: 1rem;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1rem;
-        justify-content: flex-end;
+    /* border: 2px solid green; */
+    flex-basis: calc(100% / 3);
+    padding-right: 2rem;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    justify-content: flex-end;
 }
 
 .login_form {
@@ -157,8 +159,8 @@ main {
 }
 
 .whitdrawls_total {
-    color:var(--contrast-color);
-    font-size: 1.5rem; 
+    color: var(--contrast-color);
+    font-size: 1.5rem;
 }
 
 /* .sort {
@@ -176,7 +178,7 @@ main {
 }
 
 .sort button:hover {
-    background-color:#e38502;
+    background-color: #e38502;
     cursor: pointer;
 }
 
@@ -214,13 +216,13 @@ main {
 .whithdrawl_style {
     background-color: var(--contrast-color);
     background: -webkit-radial-gradient(top, #963100, #FE9562);
-        background: -moz-radial-gradient(top, #963100, #FE9562);
-        background: radial-gradient(to bottom, #963100, #FE9562);
+    background: -moz-radial-gradient(top, #963100, #FE9562);
+    background: radial-gradient(to bottom, #963100, #FE9562);
 }
 
 .deposit_style {
     background: #009689;
-        background: -webkit-radial-gradient(top, #009689, #B2DFDB);
-        background: -moz-radial-gradient(top, #009689, #B2DFDB);
-        background: radial-gradient(to bottom, #009689, #B2DFDB);
+    background: -webkit-radial-gradient(top, #009689, #B2DFDB);
+    background: -moz-radial-gradient(top, #009689, #B2DFDB);
+    background: radial-gradient(to bottom, #009689, #B2DFDB);
 }
